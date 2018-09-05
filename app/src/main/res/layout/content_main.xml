@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    tools:showIn="@layout/activity_main">
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/chatroom_list"
+        android:scrollbars="none">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No chatroom\nTap on + to create chatroom"
+        android:textColor="#cdcdcd"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>
